@@ -4,8 +4,8 @@
 #include <math.h>
 int main() {
     int m,pattern;
-    double theta, d,wavelength,thetaRad,wavelength_nm;
-    printf("Enter pattern = 1 for maxima or pattern = 0 for minima\n");
+    double theta, d,wl,thetaRad,wl_nm;
+    printf("Enter pattern = 1 for maxima & pattern = 0 for minima\n");
     printf("Pattern: ");
     scanf("%d", &pattern);
     printf("Enter the value of m: ");
@@ -19,28 +19,28 @@ int main() {
     d /= 1e6;
 
     if(pattern==1){
-       wavelength = (d * sin(thetaRad)) / m;
+       wl = (d * sin(thetaRad)) / m;
     }else{
-     wavelength = (d * sin(thetaRad)) / (m+0.5);
+     wl = (d * sin(thetaRad)) / (m+0.5);
     }
 
-    wavelength_nm = wavelength * 1e9;
+    wl_nm = wl * 1e9;
 
-    printf("The numeric value of the wavelength: %.2f nm\n", wavelength_nm);
+    printf("The numeric value of the wavelength: %.2f nm\n", wl_nm);
 
-    if (wavelength_nm >= 380 && wavelength_nm < 450) {
+    if (wl_nm >= 380 && wl_nm < 450) {
         printf("The color of the light: violet\n");
-    } else if (wavelength_nm >= 450 && wavelength_nm < 485) {
+    } else if (wl_nm >= 450 && wl_nm < 485) {
         printf("The color of the light: blue\n");
-    } else if (wavelength_nm >= 485 && wavelength_nm < 500) {
+    } else if (wl_nm >= 485 && wl_nm < 500) {
         printf("The color of the light: cyan\n");
-    } else if (wavelength_nm >= 500 && wavelength_nm < 565) {
+    } else if (wl_nm >= 500 && wl_nm < 565) {
         printf("The color of the light: green\n");
-    } else if (wavelength_nm >= 565 && wavelength_nm < 590) {
+    } else if (wl_nm >= 565 && wl_nm < 590) {
         printf("The color of the light: yellow\n");
-    } else if (wavelength_nm >= 590 && wavelength_nm < 625) {
+    } else if (wl_nm >= 590 && wl_nm < 625) {
         printf("The color of the light: orange\n");
-    } else if (wavelength_nm >= 625 && wavelength_nm <= 750) {
+    } else if (wl_nm >= 625 && wl_nm <= 750) {
         printf("The color of the light: red\n");
     } else {
         printf("The color of the light: Unknown\n");
