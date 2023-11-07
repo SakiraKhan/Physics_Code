@@ -5,7 +5,7 @@
 int main() {
     int m,pattern;
     double theta, d,wavelength,thetaRad,wavelength_nm;
-    printf("Enter pattern = 1 for maxima & pattern = 0 for minima\n");
+    printf("Enter pattern = 1 for maxima or pattern = 0 for minima\n");
     printf("Pattern: ");
     scanf("%d", &pattern);
     printf("Enter the value of m: ");
