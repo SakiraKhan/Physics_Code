@@ -10,7 +10,7 @@ int main() {
     scanf("%d", &pattern);
     printf("Enter the value of m: ");
     scanf("%d", &m);
-    printf("Enter the value of theta (in(0-90) degrees: ");
+    printf("Enter the value of theta (0-90) degrees: ");
     scanf("%lf", &theta);
     printf("Enter the value of d (in micrometer): ");
     scanf("%lf", &d);
